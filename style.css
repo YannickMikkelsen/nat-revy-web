@@ -1,14 +1,23 @@
+.header {
+    display: inline;
+}
+
 .header h1 {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
+/* Menu sticky */
 .header .menu {
+    position: sticky;
+    top: 0;               /* stick to top of viewport */
+    background: white;    /* prevents overlap */
+    z-index: 100;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom:10px;
 }
+
 
 .header .menu a {
     color: black;
